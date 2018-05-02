@@ -9,7 +9,9 @@ const buildItemObject = (options = {}) => {
     const assignee = options.assignee || 'Jakab';
     const verifier = options.verifier || 'Zoli';
     const startedOn = options.startedOn || '123456';
-    return {ticketNo, status, assignee, verifier, startedOn};
+    const shortDesc =  options.shortDesc || 'Issue with IE';
+    const priority =  options.priority || 'Medium';
+    return {ticketNo, status, assignee, verifier, startedOn, shortDesc, priority };
 };
 
 // Add a sample Item object to mongodb

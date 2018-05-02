@@ -1,0 +1,51 @@
+<form class="input-form" action="/items/create" method="post">
+
+  <div class="form-group">
+    <label for="ticketNo">Ticket Number</label>
+    <input type="text" class="form-control" id="ticket-number" placeholder="ALM-123" name="ticketNo">
+  </div>
+
+  <div>Status</div>
+  <input type="radio" name="status" id="status_1" value="Open" checked>
+  <label for="status1">
+        Open
+  </label>
+
+  <input type="radio" name="status" id="status_2" value="inprogress">
+  <label for="status2">
+        In-progress
+  </label>
+  <br>
+
+  <label for="assignee">Assignee</label>
+  <input type="text" class="form-control" id="assignee" placeholder="Gipsz Jakab" name="assignee">
+
+  <label for="verifier">Verifier</label>
+  <input type="text" class="form-control" id="verifier" placeholder="Kis Manyi" name="verifier">
+
+  <label for="startedOn">Started On</label>
+  <input type="text" class="form-control" id="startedOn" placeholder="2018-01-23" name="startedOn">
+
+  <label for="shortDesc">Description</label>
+  <input type="text" class="form-control" id="shortDesc" placeholder="Modal overlay is too short" name="shortDesc">
+
+  <div>Priority</div>
+  <input type="radio" name="priority" id="prio1" value="Low" checked>
+  <label for="prio1">
+        Low
+      </label>
+  <input type="radio" name="priority" id="prio2" value="Medium">
+  <label for="prio2">
+        Medium
+      </label>
+  <input type="radio" name="priority" id="prio3" value="High">
+  <label for="prio3">
+        High
+      </label>
+
+  <div>
+    <button id="submit-button" type="submit">
+      <p>Create new</p>
+    </button>
+  </div>
+</form>

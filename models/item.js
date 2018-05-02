@@ -22,6 +22,14 @@ module.exports = mongoose.model(
         startedOn: {
             type: String,
             required: true
+        },
+        shortDesc: {
+            type: String,
+            required: true
+        },
+        priority: {
+          type: String,
+          required: true
         }
     })
 );

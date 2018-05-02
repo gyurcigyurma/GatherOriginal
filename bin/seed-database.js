@@ -10,35 +10,45 @@ const seed = async () => {
         status: 'Open',
         assignee: 'Zolika',
         verifier: 'Bela',
-        startedOn: '12345'
+        startedOn: '12345',
+        shortDesc: 'Issue with click on this',
+        priority: 'Low'
     };
     const item2 = {
         ticketNo: 'ALM-444',
         status: 'Closed',
         assignee: 'JAni',
         verifier: 'Eva',
-        startedOn: '12345'
+        startedOn: '12345',
+        shortDesc: 'Issue overlay',
+        priority: 'Medium'
     };
     const item3 = {
         ticketNo: 'NEOWMA-1212',
         status: 'Pending',
         assignee: 'Tamas',
         verifier: 'XXX',
-        startedOn: '12345'
+        startedOn: '12345',
+        shortDesc: 'Payment does not load',
+        priority: 'High'
     };
     const item4 = {
         ticketNo: 'ALM-8888',
         status: 'Reopen',
         assignee: 'Karcsi',
         verifier: 'Zeno',
-        startedOn: '12345'
+        startedOn: '12345',
+        shortDesc: 'CR-123',
+        priority: 'High'
     };
     const item5 = {
         ticketNo: 'ALM-656565',
         status: 'Open',
         assignee: 'Mari',
         verifier: 'Leo',
-        startedOn: '12345'
+        startedOn: '12345',
+        shortDesc: 'Overlapped items',
+        priority: 'Low'
     };
 
 
