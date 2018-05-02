@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#title-container {
+  background-color: yellow;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2em;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  text-indent: 1em;
+  top: 0;
+  width: 100%;
+}
