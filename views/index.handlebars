@@ -8,9 +8,15 @@
         <div class="card-body">
           <h5 class="card-title">{{item.shortDesc}}</h5>
           <p class="card-text">Assignee: {{item.assignee}} | Status: {{item.status}} | verifier: {{item.verifier}} | Started on: {{item.startedOn}} </p>
-          <form id="edit-{{item._id}}" class="edit-form" action="/items/{{item._id}}/edit" method="post">
+          <!-- <form id="edit-{{item._id}}" class="edit-form" action="/items/{{item._id}}/edit" method="post">
             <button type="submit" name="button" class="edit-button">Edit</button>
-          </form>
+          </form> -->
+
+            <a href="/items/edit/{{item._id}}">
+              <div class="edit-button">EDIT</div>
+            </a>
+
+
 
           <form id="delete-{{item._id}}" class="delete-form" action="/items/{{item._id}}/delete" method="post">
             <button type="submit" name="button" class="delete-button">Delete</button>
