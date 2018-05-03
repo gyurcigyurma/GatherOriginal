@@ -25,7 +25,7 @@ describe('User visits root', () => {
             const bodyAlltext = browser.getText('body');
             assert.include(bodyAlltext, itemToCreate.assignee);
             assert.include(bodyAlltext, itemToCreate.verifier);
-            assert.include(bodyAlltext, 'Open');
+            assert.include(bodyAlltext, 'open');
         });
     });
 });

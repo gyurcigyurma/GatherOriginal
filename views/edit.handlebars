@@ -1,23 +1,18 @@
-<form class="input-form" action="/items/create" method="post">
-
-  {{#with errors as |error|}}
-    <span class="error">{{error.message}}</span>
-  {{/with}}
-
+<form class="input-form" action="/items/edit" method="post">
   <div class="form-group">
     <label for="ticketNo">Ticket Number</label>
-    <input type="text" class="form-control" id="ticket-number" placeholder="ALM-123" name="ticketNo">
+    <input type="text" class="form-control" id="ticket-number" placeholder="ALM-123" name="ticketNo" value="{{itemTo.ticketNo}}">
   </div>
 
   <div>Status</div>
 
   <div class="radio-container">
-    <input type="radio" name="status" id="status_1" value="open" checked>
+    <input type="radio" name="status" id="status_1" value="Open" checked>
     <label for="status_1">
           Open
     </label>
 
-    <input type="radio" name="status" id="status_2" value="in-progress">
+    <input type="radio" name="status" id="status_2" value="inprogress">
     <label for="status_2">
           In-progress
     </label>
@@ -28,19 +23,17 @@
     </label>
   </div>
 
-
-
   <label for="assignee">Assignee</label>
-  <input type="text" class="form-control" id="assignee" placeholder="Gipsz Jakab" name="assignee">
+  <input type="text" class="form-control" id="assignee" placeholder="Gipsz Jakab" name="assignee" value="{{itemTo.assignee}}">
 
   <label for="verifier">Verifier</label>
-  <input type="text" class="form-control" id="verifier" placeholder="Kis Manyi" name="verifier">
+  <input type="text" class="form-control" id="verifier" placeholder="Kis Manyi" name="verifier" value="{{itemTo.verifier}}">
 
   <label for="startedOn">Started On</label>
-  <input type="text" class="form-control" id="startedOn" placeholder="2018-01-23" name="startedOn">
+  <input type="text" class="form-control" id="startedOn" placeholder="2018-01-23" name="startedOn" value="{{itemTo.startedOn}}">
 
   <label for="shortDesc">Description</label>
-  <input type="text" class="form-control" id="shortDesc" placeholder="Modal overlay is too short" name="shortDesc">
+  <input type="text" class="form-control" id="shortDesc" placeholder="Modal overlay is too short" name="shortDesc" value="{{itemTo.shortDesc}}">
 
   <div>Priority</div>
   <div class="radio-container">
@@ -60,7 +53,7 @@
 
   <div>
     <button id="submit-button" type="submit">
-      Create new
+      Save
     </button>
     <a href="/">Cancel</a>
   </div>

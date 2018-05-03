@@ -1,15 +1,16 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #E4EEF0!important;
 }
 
 a {
-  color: #00B7FF;
+  color: #6191A8;
 }
 
 #title-container {
-  background-color: yellow;
-  font-family: 'Indie Flower', cursive;
+  background-color: #324759;
+  font-family: 'Lobster', cursive;
   font-size: 2em;
   left: 0;
   overflow: hidden;
@@ -17,10 +18,17 @@ a {
   text-indent: 1em;
   top: 0;
   width: 100%;
+  height: 55px;
 }
 
 #title-container a {
   display: inline-block;
+  text-decoration: none;
+}
+
+
+#title {
+  padding-top: 7px;
 }
 
 
@@ -33,6 +41,8 @@ a {
   font-size: 0.9em;
   padding-top: 11px;
   display: inline-block;
+  height: 203px;
+  width: 395px;
 }
 
 .item-card li {
@@ -42,10 +52,201 @@ a {
 }
 .items-container {
   float: left;
+  padding-top: 22px;
+}
+
+.input-form {
+  padding-top: 22px;
+  max-width: 399px;
+}
+
+.radio-container {
+  min-height: 40px;
 }
 
 .prio{
   text-align: right;
   width: 70%;
   display: inline-block;
+}
+
+.btn-primary.delete{
+  background-color: red;
+}
+
+#create-new {
+  font-family: Arial;
+  font-size: 0.6em;
+  color: red;
+  width: 144px;
+  color: #B9EDF0;
+  transition: transform .3s;
+}
+
+#create-new:hover {
+  transform: scale(1.05);
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.08);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.card-header.Low{
+  background-color: rgba(12,100,0,.09);
+}
+.card-header.Medium{
+  background-color: #ffeb3b;
+}
+.card-header.High{
+  background-color: rgba(247,45,33,.9);
+}
+
+
+
+
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: rgba(10,100,200,.1);
+
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.card-text {
+    min-height: 33px;
+}
+
+.h5, h5 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn-primary.delete {
+    background-color: red;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+/* form */
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 53px;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 6px;
+  transition: transform .3s;
+}
+
+#submit-button:hover {
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #fd3838;
+  color: white;
+  padding: 9px 10px;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 6px;
+  transition: transform .3s;
+  border: none;
+}
+.delete-button:hover, .edit-button:hover {
+  cursor: pointer;
+}
+
+.delete-form, .edit-form {
+  display: inline;
+}
+
+.edit-button {
+  background-color: #258a69bd;
+  color: white;
+  padding: 9px 10px;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 6px;
+  transition: transform .3s;
+  border: none;
+}
+
+.error {
+  color: red;
+  min-height: 22px;
+  font-size: 15px;
+  background-color: mistyrose;
 }
