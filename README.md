@@ -10,3 +10,6 @@ to check:
 ```
 $ node-gyp --version
 ```
+
+To run in debug mode (linux):
+```DEBUG=gatherticket:* npm start```
