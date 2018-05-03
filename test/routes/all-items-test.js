@@ -7,20 +7,23 @@ const {parseTextFromHTML, seedItemToDatabase} = require('../test-utils');
 const {connectDatabaseAndDropData, diconnectDatabase} = require('../setup-teardown-utils');
 
 
-describe('Server path: /', () => {
+describe(' - - - - - SERVER TESTS - - - - - ', () => {
+  describe('Server path: /', () => {
 
-    beforeEach(connectDatabaseAndDropData);
+      beforeEach(connectDatabaseAndDropData);
 
-    afterEach(diconnectDatabase);
+      afterEach(diconnectDatabase);
 
-    describe('GET', () => {
-        it('renders an item with specific ticketNo', async () => {
-            const item = await seedItemToDatabase();
+      describe('GET', () => {
+          it('renders an item with specific ticketNo', async () => {
+              const item = await seedItemToDatabase();
 
-            const response = await request(app)
-                .get('/');
+              const response = await request(app)
+                  .get('/');
 
-            assert.include(parseTextFromHTML(response.text, 'body'), 'ALM-1234');
-        });
-    });
+              assert.include(parseTextFromHTML(response.text, 'body'), 'ALM-1234');
+          });
+      });
+  });
+
 });

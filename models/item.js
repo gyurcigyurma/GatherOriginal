@@ -16,8 +16,7 @@ module.exports = mongoose.model(
             required: true
         },
         verifier: {
-            type: String,
-            required: true
+            type: String
         },
         startedOn: {
             type: String,
